@@ -1,0 +1,560 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg,#fa709a,#fee140);
+    padding:10px;
+}
+
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.todo-app h2{
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.todo-app h2 img{
+    width: 30px;
+    margin-left: 10px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    background: #edeef0;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    background: transparent;
+    padding: 18px;
+    caret-color: #ff5945;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    color: #fff;
+    background-color: #ff5945;
+    font-size: 20px;
+    border-radius: 20px;
+    cursor: pointer;     
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    background-image: url(unchecked.png);
+    background-size: cover;
+    border-radius: 50%;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url(checked.png);
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    color: #000000;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background: #fee140;
+}
+ul li{
+    word-break: break-all;
+}
+
+
+@media(max-width:261px){
+    
+    input{
+        flex: 1;
+        border: none;
+        outline: none;
+        font-size: 10px;
+        background: transparent;
+        padding: 10px;
+        caret-color: #ff5945;
+    }
+    button{
+        border: none;
+        outline: none;
+        padding:18px 13px;
+        color: #fff;
+        background-color: #ff5945;
+        font-size: 10px;
+        border-radius:10px;
+        cursor: pointer;     
+    }
+    ul li span{
+        right:-30px;
+    }
+    ul li{
+        word-break: break-all;
+    }
+    }
+
+@media(min-width:271px){
+    
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 10px;
+    background: transparent;
+    padding: 10px;
+    caret-color: #ff5945;
+}
+button{
+    border: none;
+    outline: none;
+    padding:18px 13px;
+    color: #fff;
+    background-color: #ff5945;
+    font-size: 10px;
+    border-radius:10px;
+    cursor: pointer;     
+}
+ul li span{
+    right:-30px;
+}
+ul li{
+    word-break: break-all;
+}
+}
+
+
+
+
+
+    
+@media(min-width:283px){
+    
+    input{
+        flex: 1;
+        border: none;
+        outline: none;
+        font-size: 11px;
+        background: transparent;
+        padding: 10px;
+        caret-color: #ff5945;
+    }
+    button{
+        border: none;
+        outline: none;
+        padding:18px 13px;
+        color: #fff;
+        background-color: #ff5945;
+        font-size: 10px;
+        border-radius:10px;
+        cursor: pointer;     
+    }
+    ul li span{
+        right:-10px;
+    }
+    ul li{
+        word-break: break-all;
+    }
+    }
+
+        
+@media(min-width:286px){
+    
+    input{
+        flex: 1;
+        border: none;
+        outline: none;
+        font-size: 11px;
+        background: transparent;
+        padding: 10px;
+        caret-color: #ff5945;
+    }
+    button{
+        border: none;
+        outline: none;
+        padding:18px 13px;
+        color: #fff;
+        background-color: #ff5945;
+        font-size: 10px;
+        border-radius:10px;
+        cursor: pointer;     
+    }
+    ul li span{
+        right:-30px;
+    }
+    ul li{
+        word-break: break-all;
+    }
+    }
+    
+    
+
+    @media(min-width:291px){
+    
+        input{
+            flex: 1;
+            border: none;
+            outline: none;
+            font-size: 13px;
+            background: transparent;
+            padding: 11px;
+            caret-color: #ff5945;
+        }
+        button{
+            border: none;
+            outline: none;
+            padding:18px 13px;
+            color: #fff;
+            background-color: #ff5945;
+            font-size: 10px;
+            border-radius:10px;
+            cursor: pointer;     
+        }
+        ul li span{
+            right:-27px;
+        }
+        ul li{
+            word-break: break-all;
+        }
+        }
+        
+
+    
+     
+@media(min-width:301px){
+    
+    input{
+        flex: 1;
+        border: none;
+        outline: none;
+        font-size: 10px;
+        background: transparent;
+        padding: 10px;
+        caret-color: #ff5945;
+    }
+    button{
+        border: none;
+        outline: none;
+        padding:18px 13px;
+        color: #fff;
+        background-color: #ff5945;
+        font-size: 10px;
+        border-radius:10px;
+        cursor: pointer;     
+    }
+    ul li span{
+        right:-10px;
+    }
+    ul li{
+        word-break: break-all;
+    }
+    }
+
+         
+@media(min-width:330px){
+    
+    input{
+        flex: 1;
+        border: none;
+        outline: none;
+        font-size: 10px;
+        background: transparent;
+        padding: 10px;
+        caret-color: #ff5945;
+    }
+    button{
+        border: none;
+        outline: none;
+        padding:18px 13px;
+        color: #fff;
+        background-color: #ff5945;
+        font-size: 10px;
+        border-radius:10px;
+        cursor: pointer;     
+    }
+    ul li span{
+        right:-26px;
+    }
+    ul li{
+        word-break: break-all;
+    }
+    }
+         
+@media(min-width:360px){
+    
+    input{
+        flex: 1;
+        border: none;
+        outline: none;
+        font-size: 14px;
+        background: transparent;
+        padding: 10px;
+        caret-color: #ff5945;
+    }
+    button{
+        border: none;
+        outline: none;
+        padding:18px 13px;
+        color: #fff;
+        background-color: #ff5945;
+        font-size: 15px;
+        border-radius:10px;
+        cursor: pointer;     
+    }
+    ul li span{
+        right:-30px;
+    }
+    ul li{
+        word-break: break-all;
+    }
+    }
+         
+@media(min-width:390px){
+    
+    input{
+        flex: 1;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        background: transparent;
+        padding: 10px;
+        caret-color: #ff5945;
+    }
+    button{
+        border: none;
+        outline: none;
+        padding:18px 13px;
+        color: #fff;
+        background-color: #ff5945;
+        font-size: 16px;
+        border-radius:10px;
+        cursor: pointer;     
+    }
+    ul li span{
+        right:-30px;
+    }
+    ul li{
+        word-break: break-all;
+    }
+    }
+
+
+        
+@media(min-width:400px){
+    
+    input{
+        flex: 1;
+        border: none;
+        outline: none;
+        font-size: 20px;
+        background: transparent;
+        padding: 10px;
+        caret-color: #ff5945;
+    }
+    button{
+        border: none;
+        outline: none;
+        padding:20px 20px;
+        color: #fff;
+        background-color: #ff5945;
+        font-size: 10px;
+        border-radius:10px;
+        cursor: pointer;     
+    }
+    ul li span{
+        right:-10px;
+    }
+    ul li{
+        word-break: break-all;
+    }
+    }
+
+            
+@media(min-width:412px){
+    
+    input{
+        flex: 1;
+        border: none;
+        outline: none;
+        font-size: 20px;
+        background: transparent;
+        padding: 10px;
+        caret-color: #ff5945;
+    }
+    button{
+        border: none;
+        outline: none;
+        padding:20px 20px;
+        color: #fff;
+        background-color: #ff5945;
+        font-size: 10px;
+        border-radius:10px;
+        cursor: pointer;     
+    }
+    ul li span{
+        right:-30px;
+    }
+    ul li{
+        word-break: break-all;
+    }
+    }
+
+                    
+@media(min-width:450px){
+    
+    input{
+        flex: 1;
+        border: none;
+        outline: none;
+        font-size: 20px;
+        background: transparent;
+        padding: 16px;
+        caret-color: #ff5945;
+    }
+    button{
+        border: none;
+        outline: none;
+        padding:20px 20px;
+        color: #fff;
+        background-color: #ff5945;
+        font-size: 15px;
+        border-radius:10px;
+        cursor: pointer;     
+    }
+    ul li span{
+        right:-20px;
+    }
+    ul li{
+        word-break: break-all;
+    }
+    }
+       
+            
+            
+    
+       
+                    
+
+            
+@media(min-width:500px){
+    
+    input{
+        flex: 1;
+        border: none;
+        outline: none;
+        font-size: 20px;
+        background: transparent;
+        padding: 10px;
+        caret-color: #ff5945;
+    }
+    button{
+        border: none;
+        outline: none;
+        padding:20px 20px;
+        color: #fff;
+        background-color: #ff5945;
+        font-size: 15px;
+        border-radius:10px;
+        cursor: pointer;     
+    }
+    ul li span{
+        right:-20px;
+    }
+    ul li{
+        word-break: break-all;
+    }
+    }
+
+
+                
+@media(min-width:1440px){
+    
+    input{
+        flex: 1;
+        border: none;
+        outline: none;
+        font-size: 20px;
+        background: transparent;
+        padding: 10px;
+        caret-color: #ff5945;
+    }
+    button{
+        border: none;
+        outline: none;
+        padding:20px 20px;
+        color: #fff;
+        background-color: #ff5945;
+        font-size: 15px;
+        border-radius:10px;
+        cursor: pointer;     
+    }
+    ul li span{
+        right:-35px;
+    }
+    ul li{
+        word-break: break-all;
+    }
+    }
+
+       
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
